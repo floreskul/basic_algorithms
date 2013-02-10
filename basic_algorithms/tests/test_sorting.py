@@ -11,23 +11,19 @@ class TestSortingAlgorithms(unittest.TestCase):
         self.reverse_ordered_list = list(range(9, -1, -1))
         self.random_ordered_list = list(range(10))
         random.shuffle(self.random_ordered_list)
+        
+    def run_sorting_method(self, sorting_method):
+        self.assertEqual(sorting_method(list(self.empty_list)),
+                         self.empty_list)
+        self.assertEqual(sorting_method(list(self.sorted_list)),
+                         self.sorted_list)
+        self.assertEqual(sorting_method(list(self.reverse_ordered_list)),
+                         self.sorted_list)
+        self.assertEqual(sorting_method(list(self.random_ordered_list)),
+                         self.sorted_list)
     
     def test_selection_sort(self):
-        self.assertEqual(selection_sort(list(self.empty_list)),
-                         self.empty_list)
-        self.assertEqual(selection_sort(list(self.sorted_list)),
-                         self.sorted_list)
-        self.assertEqual(selection_sort(list(self.reverse_ordered_list)),
-                         self.sorted_list)
-        self.assertEqual(selection_sort(list(self.random_ordered_list)),
-                         self.sorted_list)
+        self.run_sorting_method(selection_sort)
         
     def test_insertion_sort(self):
-        self.assertEqual(insertion_sort(list(self.empty_list)),
-                         self.empty_list)
-        self.assertEqual(insertion_sort(list(self.sorted_list)),
-                         self.sorted_list)
-        self.assertEqual(insertion_sort(list(self.reverse_ordered_list)),
-                         self.sorted_list)
-        self.assertEqual(insertion_sort(list(self.random_ordered_list)),
-                         self.sorted_list)
+        self.run_sorting_method(insertion_sort)
