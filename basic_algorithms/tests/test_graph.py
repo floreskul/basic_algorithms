@@ -2,7 +2,8 @@ import unittest
 from ..graph.bfs import bfs
 from ..graph.dfs import dfs
 
-class TestSequenceFunctions(unittest.TestCase):
+class TestGraphAlgorithms(unittest.TestCase):
+    
     def setUp(self):
         self.adjacent_nodes = {
                           1: [2, 3],
