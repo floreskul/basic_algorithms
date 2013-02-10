@@ -5,7 +5,7 @@
 
 def selection_sort(x):
     n = len(x)
-    # values [0, i-1] are sorted and will not change
+    # elements [0:i-1] are sorted and will not change
     for i in range(n - 1):
         # find an element to insert into i-th position
         min_element_index = i

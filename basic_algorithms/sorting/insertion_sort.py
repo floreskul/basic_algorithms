@@ -5,7 +5,7 @@
 
 def insertion_sort(x):
     n = len(x)
-    # values [0, i-1] are sorted
+    # elements [0:i-1] are sorted
     for i in range(1, n):
         value_to_insert = x[i]
         hole_position = i
