@@ -1,6 +1,7 @@
 import unittest
 import random
 from ..sorting.selection_sort import selection_sort
+from ..sorting.insertion_sort import insertion_sort
 
 class TestSortingAlgorithms(unittest.TestCase):
     
@@ -19,4 +20,14 @@ class TestSortingAlgorithms(unittest.TestCase):
         self.assertEqual(selection_sort(list(self.reverse_ordered_list)),
                          self.sorted_list)
         self.assertEqual(selection_sort(list(self.random_ordered_list)),
+                         self.sorted_list)
+        
+    def test_insertion_sort(self):
+        self.assertEqual(insertion_sort(list(self.empty_list)),
+                         self.empty_list)
+        self.assertEqual(insertion_sort(list(self.sorted_list)),
+                         self.sorted_list)
+        self.assertEqual(insertion_sort(list(self.reverse_ordered_list)),
+                         self.sorted_list)
+        self.assertEqual(insertion_sort(list(self.random_ordered_list)),
                          self.sorted_list)
