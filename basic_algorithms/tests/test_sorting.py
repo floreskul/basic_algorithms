@@ -2,6 +2,7 @@ import unittest
 import random
 from ..sorting.selection_sort import selection_sort
 from ..sorting.insertion_sort import insertion_sort
+from ..sorting.bubble_sort import bubble_sort
 
 class TestSortingAlgorithms(unittest.TestCase):
     
@@ -27,3 +28,6 @@ class TestSortingAlgorithms(unittest.TestCase):
         
     def test_insertion_sort(self):
         self.run_sorting_method(insertion_sort)
+    
+    def test_bubble_sort(self):
+        self.run_sorting_method(bubble_sort)
