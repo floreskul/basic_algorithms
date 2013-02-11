@@ -17,11 +17,12 @@ Basic algorithms in Python3
 Performance and space complexity are given for the worst-case scenario.
 
 
-### Graph algorithms
+### Sorting algorithms
 | Name        | Number of comparisons | Number of swaps | Auxiliary memory |
 | ------------- |:-------------:|:-------------:|:-------------:|
 | [Selection sort](http://en.wikipedia.org/wiki/Selection_sort) ([code](./basic_algorithms/sorting/selection_sort.py)) | O(n²) | O(n) | O(1) |
 | [Insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) ([code](./basic_algorithms/sorting/insertion_sort.py)) | O(n²) / O(n²) / O(n) | O(n²) / O(n²) / O(1) | O(1) |
+| [Bubble sort](http://en.wikipedia.org/wiki/Bubble_sort) ([code](./basic_algorithms/sorting/bubble_sort.py)) | O(n²) | O(n²) | O(1) |
 
 **Definitions:**
 n - size of input array (list)
