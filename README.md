@@ -23,6 +23,7 @@ Performance and space complexity are given for the worst-case scenario.
 | [Selection sort](http://en.wikipedia.org/wiki/Selection_sort) ([code](./basic_algorithms/sorting/selection_sort.py)) | O(n²) | O(n) | O(1) |
 | [Insertion sort](http://en.wikipedia.org/wiki/Insertion_sort) ([code](./basic_algorithms/sorting/insertion_sort.py)) | O(n²) / O(n²) / O(n) | O(n²) / O(n²) / O(1) | O(1) |
 | [Bubble sort](http://en.wikipedia.org/wiki/Bubble_sort) ([code](./basic_algorithms/sorting/bubble_sort.py)) | O(n²) | O(n²) | O(1) |
+| [Quicksort](http://en.wikipedia.org/wiki/Quicksort) ([code](./basic_algorithms/sorting/quicksort.py)) | O(n²) / O(n log n) / O(n log n) | O(n²) / O(n log n) / O(n log n) | O(n) - naive <br/> O (n log n) - optimized |
 
 **Definitions:**
 n - size of input array (list)
