@@ -3,6 +3,7 @@ import random
 from ..sorting.selection_sort import selection_sort
 from ..sorting.insertion_sort import insertion_sort
 from ..sorting.bubble_sort import bubble_sort
+from ..sorting.merge_sort import merge_sort
 
 class TestSortingAlgorithms(unittest.TestCase):
     
