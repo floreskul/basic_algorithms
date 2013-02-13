@@ -31,3 +31,8 @@ Performance and space complexity are given for the worst-case scenario.
 n - size of input array (list)
 
 Number of comparisons and swaps is given for worst / average / best cases (one value if the cases are equal).
+
+### Number theory algorithms
+| Name        | Performance | Space complexity |
+| ------------- |:-------------:|:-------------:|
+| [Euclidean GCD algorithm](http://en.wikipedia.org/wiki/Euclidean_algorithm) ([code](./basic_algorithms/number_theory/gcd.py)) | O(log min(a, b)) <br/> a, b - input values | O(1) |
