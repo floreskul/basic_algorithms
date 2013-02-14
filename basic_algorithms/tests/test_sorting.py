@@ -34,5 +34,5 @@ class TestSortingAlgorithms(unittest.TestCase):
     def test_bubble_sort(self):
         self.run_sorting_method(bubble_sort)
         
-    def test_bubble_sort(self):
+    def test_shellsort(self):
         self.run_sorting_method(shellsort)
