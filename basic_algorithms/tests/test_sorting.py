@@ -38,5 +38,8 @@ class TestSortingAlgorithms(unittest.TestCase):
     def test_quicksort(self):
         self.run_sorting_method(quicksort)
     
+    def test_merge_sort(self):
+        self.run_sorting_method(merge_sort)
+        
     def test_shellsort(self):
         self.run_sorting_method(shellsort)

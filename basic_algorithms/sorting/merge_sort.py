@@ -22,6 +22,7 @@ def merge_sort(x):
     n = len(x)
     if n <= 1:
         return x
-    left = merge_sort(x[:n/2])
-    right =  merge_sort(x[n/2:])
+    middle = int(n / 2)
+    left = merge_sort(x[:middle])
+    right =  merge_sort(x[middle:])
     return merge(left, right)
