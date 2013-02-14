@@ -8,8 +8,10 @@ def shellsort(x):
     n = len(x)
     if n <= 1:
         return x
+    # use original Shell's gaps: [floor(n/2), floor(n/4), ..., 1]  
     gaps = [int(n / 2**i) for i in range(1, int(log(n, 2) + 1))]
     for gap in gaps:
+        # run insertion sort for this gap
         for i in range(gap, n):
             value_to_insert = x[i]
             hole_position = i
