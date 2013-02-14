@@ -4,6 +4,7 @@ from ..sorting.selection_sort import selection_sort
 from ..sorting.insertion_sort import insertion_sort
 from ..sorting.bubble_sort import bubble_sort
 from ..sorting.merge_sort import merge_sort
+from ..sorting.shellsort import shellsort
 
 class TestSortingAlgorithms(unittest.TestCase):
     
@@ -32,3 +33,6 @@ class TestSortingAlgorithms(unittest.TestCase):
     
     def test_bubble_sort(self):
         self.run_sorting_method(bubble_sort)
+        
+    def test_bubble_sort(self):
+        self.run_sorting_method(shellsort)
