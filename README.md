@@ -18,6 +18,7 @@ Performance and space complexity are given for the worst-case scenario.
 
 
 ### Sorting algorithms
+#### Comparison sorts
 | Name        | Number of comparisons | Number of swaps | Auxiliary memory |
 | ------------- |:-------------:|:-------------:|:-------------:|
 | [Selection sort](http://en.wikipedia.org/wiki/Selection_sort) ([code](./basic_algorithms/sorting/selection_sort.py)) | O(n²) | O(n) | O(1) |
@@ -27,11 +28,17 @@ Performance and space complexity are given for the worst-case scenario.
 | [Merge sort](http://en.wikipedia.org/wiki/Merge_sort) ([code](./basic_algorithms/sorting/merge_sort.py)) | O(n log n) | - | O(n) |
 | [Shellsort](http://en.wikipedia.org/wiki/Shellsort) ([code](./basic_algorithms/sorting/shellsort.py)) | worst case: <br/> O(n²) with Shell's gap values <br/> O(n log² n) with Pratt's gaps | same as comparisons | O(1) |
 
+Number of comparisons and swaps is given for worst / average / best cases (one value if the cases are equal).
+
+#### Non-comparison sorts
+| Name        | Complexity | Auxiliary memory |
+| ------------- |:-------------:|:-------------:|:-------------:|
+| [Counting sort](http://en.wikipedia.org/wiki/Counting_sort) ([code](./basic_algorithms/sorting/counting_sort.py)) | O(n + k) | O(k) |
+
 
 **Definitions:**
-n - size of input array (list)
+n - size of input array (list), k - maximum key value.
 
-Number of comparisons and swaps is given for worst / average / best cases (one value if the cases are equal).
 
 ### Number theory algorithms
 | Name        | Performance | Space complexity |
