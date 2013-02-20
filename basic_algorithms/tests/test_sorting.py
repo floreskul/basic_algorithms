@@ -7,6 +7,7 @@ from ..sorting.quicksort import quicksort
 from ..sorting.merge_sort import merge_sort
 from ..sorting.shellsort import shellsort
 from ..sorting.counting_sort import counting_sort
+from ..sorting.gnome_sort import gnome_sort
 
 
 class TestSortingAlgorithms(unittest.TestCase):
@@ -49,3 +50,6 @@ class TestSortingAlgorithms(unittest.TestCase):
         
     def test_counting_sort(self):
         self.run_sorting_method(counting_sort, self.max_value)
+    
+    def test_gnome_sort(self):
+        self.run_sorting_method(gnome_sort)
