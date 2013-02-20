@@ -11,10 +11,9 @@ def gnome_sort(x):
     n = len(x)
     pos = 1
     while pos < n:
-        if x[pos-1] < x[pos]:
+        if x[pos-1] <= x[pos]:
             pos += 1
         else:
             x[pos-1], x[pos] = x[pos], x[pos-1]
             pos = max(pos - 1, 1)
     return x
-        
