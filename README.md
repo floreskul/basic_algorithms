@@ -27,6 +27,7 @@ Performance and space complexity are given for the worst-case scenario.
 | [Quicksort](http://en.wikipedia.org/wiki/Quicksort) ([code](./basic_algorithms/sorting/quicksort.py)) | O(n²) / O(n log n) / O(n log n) | O(n²) / O(n log n) / O(n log n) | O(n) - naive <br/> O (n log n) - optimized |
 | [Merge sort](http://en.wikipedia.org/wiki/Merge_sort) ([code](./basic_algorithms/sorting/merge_sort.py)) | O(n log n) | - | O(n) |
 | [Shellsort](http://en.wikipedia.org/wiki/Shellsort) ([code](./basic_algorithms/sorting/shellsort.py)) | worst case: <br/> O(n²) with Shell's gap values <br/> O(n log² n) with Pratt's gaps | same as comparisons | O(1) |
+| [Gnome sort](http://en.wikipedia.org/wiki/Gnome_sort) ([code](./basic_algorithms/sorting/gnome_sort.py)) | O(n²) / O(n²) / O(n) | O(n²) / O(n²) / O(n) | O(1) |
 
 Number of comparisons and swaps is given for worst / average / best cases (one value if the cases are equal).
 
