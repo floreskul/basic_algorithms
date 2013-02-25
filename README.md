@@ -45,3 +45,4 @@ n - size of input array (list), k - maximum key value.
 | Name        | Performance | Space complexity |
 | ------------- |:-------------:|:-------------:|
 | [Euclidean GCD algorithm](http://en.wikipedia.org/wiki/Euclidean_algorithm) ([code](./basic_algorithms/number_theory/gcd.py)) | O(log min(a, b)) <br/> a, b - input values | O(1) |
+| [Exponentiation by squaring](http://en.wikipedia.org/wiki/Exponentiation_by_squaring) ([code](./basic_algorithms/number_theory/exp_by_squaring.py)) | O(log n) <br/> n - power | O(1) |
