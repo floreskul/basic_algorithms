@@ -41,6 +41,13 @@ Number of comparisons and swaps is given for worst / average / best cases (one v
 n - size of input array (list), k - maximum key value.
 
 
+### Search algorithms
+| Name        | Performance | Space complexity |
+| ------------- |:-------------:|:-------------:|
+| [Binary search](http://en.wikipedia.org/wiki/Binary_search) ([code](./basic_algorithms/searching/binary_search.py)) | O(log n) | O(1) |
+| [Quickselect](http://en.wikipedia.org/wiki/Selection_algorithm) ([code](./basic_algorithms/searching/quickselect.py)) | O(log n) | O(1) |
+
+
 ### Number theory algorithms
 | Name        | Performance | Space complexity |
 | ------------- |:-------------:|:-------------:|
