@@ -53,3 +53,4 @@ n - size of input array (list), k - maximum key value.
 | ------------- |:-------------:|:-------------:|
 | [Euclidean GCD algorithm](http://en.wikipedia.org/wiki/Euclidean_algorithm) ([code](./basic_algorithms/number_theory/gcd.py)) | O(log min(a, b)) <br/> a, b - input values | O(1) |
 | [Exponentiation by squaring](http://en.wikipedia.org/wiki/Exponentiation_by_squaring) ([code](./basic_algorithms/number_theory/exp_by_squaring.py)) | O(log n) <br/> n - power | O(1) |
+| [Sieve of Eratosthenes](http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) ([code](./basic_algorithms/number_theory/sieve_of_eratosthenes.py)) | O(n log log n) <br/> n - upper limit | O(n) |
