@@ -48,6 +48,12 @@ n - size of input array (list), k - maximum key value.
 | [Quickselect](./basic_algorithms/searching/quickselect.py) ([wiki](http://en.wikipedia.org/wiki/Selection_algorithm)) | O(log n) | O(1) |
 
 
+### Sampling algorithms
+| Name        | Performance | Space complexity |
+| ------------- |:-------------:|:-------------:|
+| [Reservoir sampling](./basic_algorithms/sampling/reservoir_sampling.py) ([wiki](http://en.wikipedia.org/wiki/Reservoir_sampling)) | O(log n) | O(1) |
+
+
 ### Number theory algorithms
 | Name        | Performance | Space complexity |
 | ------------- |:-------------:|:-------------:|
