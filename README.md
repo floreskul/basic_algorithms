@@ -51,7 +51,7 @@ n - size of input array (list), k - maximum key value.
 ### Sampling algorithms
 | Name        | Performance | Space complexity |
 | ------------- |:-------------:|:-------------:|
-| [Reservoir sampling](./basic_algorithms/sampling/reservoir_sampling.py) ([wiki](http://en.wikipedia.org/wiki/Reservoir_sampling)) | O(log n) | O(1) |
+| [Reservoir sampling](./basic_algorithms/sampling/reservoir_sampling.py) ([wiki](http://en.wikipedia.org/wiki/Reservoir_sampling)) | O(n) | O(k) <br/> k - sample size |
 
 
 ### Number theory algorithms
