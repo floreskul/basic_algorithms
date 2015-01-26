@@ -17,6 +17,15 @@ Collection of classic algorithms implemented in Python3.
 Performance and space complexity are given for the worst-case scenario.
 
 
+### Tree algorithms
+| Name        | Performance | Space complexity |
+| ------------- |:-------------:|:-------------:|
+| [Tree traversal algorithms](./basic_algorithms/tree/traversal.py) ([wiki](http://en.wikipedia.org/wiki/Tree_traversal)) | O(n)) | O(n) <br/>for unbalanced tree |
+
+**Definitions:**
+* n - number of nodes in a tree
+
+
 ### Sorting algorithms
 #### Comparison sorts
 | Name        | Number of comparisons | Number of swaps | Auxiliary memory |
