@@ -3,6 +3,7 @@
     Description: http://en.wikipedia.org/wiki/Tree_traversal
     
     DFS-based traversals: pre-order, in-order, post-order.
+    BFS-based traversals: pre-order, in-order, post-order.
 """
 
 def pre_order(root, result=[]):
@@ -32,5 +33,20 @@ def post_order(root, result=[]):
     post_order(root.left)
     post_order(root.right)
     result.append(root.value)
+
+    return result
+
+def level_order(root):
+    result = []
+    queue = [root]
+    
+    while queue:
+        node = queue.pop(0)
+        if not node:
+            continue
+        
+        result.append(node.value)
+        queue.append(node.left)
+        queue.append(node.right)
 
     return result

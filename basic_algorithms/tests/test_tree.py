@@ -1,7 +1,7 @@
 import unittest
 import collections
 
-from ..tree.traversal import pre_order, in_order, post_order
+from ..tree.traversal import pre_order, in_order, post_order, level_order
 
 Node = collections.namedtuple('Node', ['value', 'left', 'right'])
 
@@ -56,3 +56,6 @@ class TestTreeAlgorithms(unittest.TestCase):
 
     def test_post_order(self):
         self.assertEqual(post_order(self.tree), ['a', 'c', 'e', 'd', 'b', 'h', 'i', 'g', 'f'])
+
+    def test_level_order(self):
+        self.assertEqual(level_order(self.tree), ['f', 'b', 'g', 'a', 'd', 'i', 'c', 'e', 'h'])

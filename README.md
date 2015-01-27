@@ -20,7 +20,8 @@ Performance and space complexity are given for the worst-case scenario.
 ### Tree algorithms
 | Name        | Performance | Space complexity |
 | ------------- |:-------------:|:-------------:|
-| [DFS-based tree traversal <br/> (Pre-order, In-order, Post-order)](./basic_algorithms/tree/traversal.py) ([wiki](http://en.wikipedia.org/wiki/Tree_traversal)) | O(n) | O(n) <br/>for unbalanced tree |
+| [Pre-order, In-order, Post-order traversals](./basic_algorithms/tree/traversal.py) ([wiki](http://en.wikipedia.org/wiki/Tree_traversal)) | O(n) | O(n) <br/>for unbalanced tree |
+| [Level-order traversal](./basic_algorithms/tree/traversal.py) ([wiki](http://en.wikipedia.org/wiki/Tree_traversal#Breadth-first)) | O(n) | O(n) |
 
 **Definitions:**
 * n - number of nodes in a tree
