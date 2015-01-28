@@ -1,6 +1,8 @@
+import copy
 import unittest
 from ..graph.bfs import bfs
 from ..graph.dfs import dfs
+from ..graph.topological_sort import topological_sort
 
 class TestGraphAlgorithms(unittest.TestCase):
     
@@ -29,6 +31,24 @@ class TestGraphAlgorithms(unittest.TestCase):
             'e': {'a': 3, 'b': 4, 'd': 4, 'f': 7},
             'f': {'c': 5, 'e': 7}
         }
+
+        self.topological_sort_cyclic_graph = {
+            'a': ['b'],
+            'b': ['c'],
+            'c': ['a']
+        }
+
+        self.topological_sort_graph = {
+            2: [],
+            3: [8, 10],
+            5: [11],
+            7: [8, 11],
+            8: [9],
+            9: [],
+            10: [],
+            11: [2, 9, 10]
+        }
+        
     
     def test_bfs(self):
         self.assertEqual(bfs(self.bfs_graph1, 1), [1, 2, 3, 4, 5])
@@ -37,6 +57,22 @@ class TestGraphAlgorithms(unittest.TestCase):
     def test_dfs(self):
         self.assertEqual(dfs(self.bfs_graph1, 1), [1, 3, 2, 5, 4])
         self.assertEqual(dfs(self.bfs_graph2, 'a'), ['a', 'c', 'g', 'b', 'e', 'f', 'd'])
+
+    def test_topological_sort(self):
+        # test cyclic graph case
+        graph = copy.deepcopy(self.topological_sort_cyclic_graph)
+        result = topological_sort(graph)
+        self.assertTrue(result is None)
+
+        # test normal case
+        graph = copy.deepcopy(self.topological_sort_graph)
+        result = topological_sort(graph)
+        self.assertTrue(len(result), 8)
+        
+        # check topological order
+        for u in self.topological_sort_graph:
+            for v in self.topological_sort_graph[u]:
+                self.assertTrue(result.index(u) < result.index(v))
     
     # def test_minimum_spanning_tree(self, algorithm):
     #     tree = algorithm(self.spanning_tree_graph)
