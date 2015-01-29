@@ -9,6 +9,7 @@ Collection of classic algorithms implemented in Python3.
 | ------------- |:-------------:|:-------------:|
 | [Breadth-first search](./basic_algorithms/graph/bfs.py) ([wiki](http://en.wikipedia.org/wiki/Breadth-first_search)) | O(&#124;E&#124;) | O(&#124;V&#124;) |
 | [Depth-first search](./basic_algorithms/graph/dfs.py) ([wiki](http://en.wikipedia.org/wiki/Depth-first_search)) | O(&#124;E&#124;) | O(&#124;V&#124;) |
+| [Topological sort](./basic_algorithms/graph/topological_sort.py) ([wiki](http://en.wikipedia.org/wiki/Topological_sorting)) | O(&#124;E&#124;) | O(&#124;V&#124;) |
 
 **Definitions:**
 * V - number of nodes
