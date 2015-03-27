@@ -56,7 +56,7 @@ n - size of input array (list), k - maximum key value.
 | Name        | Performance | Space complexity |
 | ------------- |:-------------:|:-------------:|
 | [Binary search](./basic_algorithms/searching/binary_search.py) ([wiki](http://en.wikipedia.org/wiki/Binary_search)) | O(log n) | O(1) |
-| [Quickselect](./basic_algorithms/searching/quickselect.py) ([wiki](http://en.wikipedia.org/wiki/Selection_algorithm)) | O(log n) | O(1) |
+| [Quickselect](./basic_algorithms/searching/quickselect.py) ([wiki](http://en.wikipedia.org/wiki/Quickselect)) |  O(n²) / O(n) / O(n) | O(1) |
 | [Kadane's maximum subarray algorithm](./basic_algorithms/searching/kadane.py) ([wiki](http://en.wikipedia.org/wiki/Maximum_subarray_problem)) | O(n) | O(1) |
 
 
